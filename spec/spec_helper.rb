@@ -28,6 +28,8 @@ version: 5
 hierarchy:
   - name: SIMP Compliance Engine
     lookup_key: compliance_markup::enforcement
+  - name: Hostname
+    path: "%{facts.hostname}.yaml"
   - name: Custom Test Hiera
     path: "%{custom_hiera}.yaml"
   - name: "%{module_name}"
